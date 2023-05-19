@@ -1,0 +1,42 @@
+/* Estilos para el cuerpo del documento html*/
+
+body{
+    margin: 0;/*DIEGO ELIMINA EL MAGEN*/
+    padding: 0;/*ELIMINA EL ESPACIO DE RELLENO INTERNO  DEL CUERPO*/
+    box-sizing: border-box;/*ESTABLECE EL MODELO DE LA CAJA*/
+    font-family: sans-serif;/*ESTABLECEMOS LA FUENTE*/
+}
+
+.padre{
+    display: flex;/*MUESTRAS LOS ELEMENTOS COMO UN CONTENEDOR PERO FLEXIBLE*/
+    justify-content: center;/*PONE EL CONTENIDO CENTRADO*/
+    align-items: center;/*CENTRA EL CONTENIDO VERTICALMENTE*/
+    height: 100vh;/*AYUDA PARA HACER MAS ADAPTABLE LA PAGINA*/
+}
+
+.hijo{
+    background: #4c35AA;
+    border-radius: 15px;/*REDONDEA LOS BORDES*/
+    height: 200px;
+    width: 200px;
+}
+
+.hijo::before{
+    background: yellow;
+    content: "before";
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 15px;
+
+
+
+}
+.hijo::after{
+    background: red;
+    content: "after";
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 15px;
+}
